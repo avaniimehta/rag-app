@@ -1,0 +1,182 @@
+[
+  {
+    "id": "q1",
+    "question": "What technologies are used to build the CareerNest platform?",
+    "relevant_sources": ["careernest_notes.md"],
+    "gold_answer": "CareerNest uses React, Node.js, Express, MySQL, Socket.IO, JWT authentication, and Ollama running the Mistral model."
+  },
+  {
+    "id": "q2",
+    "question": "What is the purpose of integrating Ollama into CareerNest?",
+    "relevant_sources": ["careernest_notes.md"],
+    "gold_answer": "Ollama is used for resume-to-job matching and interview preparation."
+  },
+  {
+    "id": "q3",
+    "question": "How are recruiters and candidates able to communicate on CareerNest?",
+    "relevant_sources": ["careernest_notes.md"],
+    "gold_answer": "Through real-time chat implemented using Socket.IO."
+  },
+  {
+    "id": "q4",
+    "question": "How are interview questions generated in CareerNest?",
+    "relevant_sources": ["careernest_notes.md"],
+    "gold_answer": "The platform uses an AI model to generate interview questions from the job description."
+  },
+  {
+    "id": "q5",
+    "question": "What authentication mechanism does CareerNest use?",
+    "relevant_sources": ["careernest_notes.md"],
+    "gold_answer": "JWT authentication."
+  },
+  {
+    "id": "q6",
+    "question": "What is a data warehouse according to Inmon?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "A subject-oriented, integrated, time-variant and non-volatile collection of data for decision making."
+  },
+  {
+    "id": "q7",
+    "question": "What is the difference between OLTP and OLAP?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "OLTP supports day-to-day operations while OLAP supports analytical and decision-making queries."
+  },
+  {
+    "id": "q8",
+    "question": "Why is a data warehouse needed?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "To integrate scattered data, maintain historical data, improve performance, and support business intelligence."
+  },
+  {
+    "id": "q9",
+    "question": "What is the difference between a data warehouse and a data mart?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "A data warehouse is enterprise-wide while a data mart is department-specific."
+  },
+  {
+    "id": "q10",
+    "question": "What are the three tiers of a data warehouse architecture?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Bottom tier (DW server), Middle tier (OLAP server), and Top tier (Front-end/client tools)."
+  },
+  {
+    "id": "q11",
+    "question": "What are the four types of metadata in a data warehouse?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Technical, Business, Operational, and Process metadata."
+  },
+  {
+    "id": "q12",
+    "question": "What are the three phases of the ETL process?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Extract, Transform, and Load."
+  },
+  {
+    "id": "q13",
+    "question": "What is incremental loading in ETL?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Loading only new or changed data into the warehouse."
+  },
+  {
+    "id": "q14",
+    "question": "What is dimensional modeling according to Ralph Kimball?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "A method for organizing data to make it understandable and fast for business analysis."
+  },
+  {
+    "id": "q15",
+    "question": "What are facts and dimensions in dimensional modeling?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Facts are measurable business metrics while dimensions provide context such as time, customer, or product."
+  },
+  {
+    "id": "q16",
+    "question": "What is the difference between a star schema and a snowflake schema?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Star schema uses denormalized dimensions while snowflake schema uses normalized dimensions."
+  },
+  {
+    "id": "q17",
+    "question": "What is the purpose of drill-down in OLAP?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "To move from summarized data to more detailed data."
+  },
+  {
+    "id": "q18",
+    "question": "What does FASMI stand for in OLAP?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "Fast Analysis of Shared Multidimensional Information."
+  },
+  {
+    "id": "q19",
+    "question": "What is the main purpose of an Executive Information System?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "To provide high-level decision support for senior executives."
+  },
+  {
+    "id": "q20",
+    "question": "How can a data warehouse support business strategy?",
+    "relevant_sources": ["DW_DM_Revision_Notes.pdf"],
+    "gold_answer": "By providing a single version of truth, supporting CRM, supply chain analysis, and competitive advantage."
+  },
+  {
+    "id": "q21",
+    "question": "What is machine learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Machine learning is a branch of AI that enables computers to learn from data without explicit programming."
+  },
+  {
+    "id": "q22",
+    "question": "What are the three main types of machine learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Supervised learning, unsupervised learning, and reinforcement learning."
+  },
+  {
+    "id": "q23",
+    "question": "What is supervised learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Learning from labeled training data to make predictions."
+  },
+  {
+    "id": "q24",
+    "question": "What is unsupervised learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Learning patterns from unlabeled data."
+  },
+  {
+    "id": "q25",
+    "question": "What is reinforcement learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "A learning approach where an agent learns by interacting with an environment using rewards and penalties."
+  },
+  {
+    "id": "q26",
+    "question": "Why is data preprocessing important in machine learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "It improves data quality before training models."
+  },
+  {
+    "id": "q27",
+    "question": "What is model evaluation in machine learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "The process of measuring how well a trained model performs using evaluation metrics."
+  },
+  {
+    "id": "q28",
+    "question": "What is the difference between classification and regression?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Classification predicts categories while regression predicts continuous numerical values."
+  },
+  {
+    "id": "q29",
+    "question": "What is clustering in machine learning?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "An unsupervised learning technique that groups similar data points together."
+  },
+  {
+    "id": "q30",
+    "question": "Why is machine learning considered a branch of artificial intelligence?",
+    "relevant_sources": ["Machine Learning Tutorial - GeeksforGeeks.html"],
+    "gold_answer": "Because it enables systems to learn from data and improve performance without being explicitly programmed."
+  }
+]

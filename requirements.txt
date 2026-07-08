@@ -1,0 +1,9 @@
+fastapi>=0.110
+uvicorn>=0.29
+pydantic>=2.6
+sentence-transformers>=2.6
+faiss-cpu>=1.8
+pypdf>=4.0
+beautifulsoup4>=4.12
+requests>=2.31
+numpy>=1.26
