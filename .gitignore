@@ -5,3 +5,5 @@ __pycache__/
 data/index/*
 !data/index/.gitkeep
 eval/results.json
+data/corpus/*
+!data/corpus/.gitkeep
