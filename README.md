@@ -20,7 +20,7 @@ multi-region distribution, that trade-off is worth it.
 - The model pulled once: `ollama pull qwen2:0.5b`
 - ~1GB free RAM for the embedding model + qwen2:0.5b (chosen over larger
   models like Mistral because it runs far faster on CPU-only machines)
-- ~2GB free RAM for the embedding model + Mistral
+
 
 LLM choice: qwen2:0.5b via Ollama — a small (352MB) model that runs fast on CPU-only hardware. Larger local models (e.g. Mistral 7B) produced multi-minute response times without a GPU, which isn't practical for an interactive QA service.
 
