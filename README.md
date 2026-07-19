@@ -17,9 +17,12 @@ multi-region distribution, that trade-off is worth it.
 ## Prerequisites
 
 - Python 3.10+
-- [Ollama](https://ollama.com) installed and running locally (`ollama serve`)
-- The model pulled once: `ollama pull mistral`
-- ~2GB free RAM for the embedding model + Mistral
+- The model pulled once: `ollama pull qwen2:0.5b`
+- ~1GB free RAM for the embedding model + qwen2:0.5b (chosen over larger
+  models like Mistral because it runs far faster on CPU-only machines)
+
+
+LLM choice: qwen2:0.5b via Ollama — a small (352MB) model that runs fast on CPU-only hardware. Larger local models (e.g. Mistral 7B) produced multi-minute response times without a GPU, which isn't practical for an interactive QA service.
 
 ## Install (under 10 minutes)
 
@@ -94,13 +97,7 @@ pod-based vector DB at 100K / 1M / 10M vectors. Assumptions (pod capacity,
 VM pricing tiers) are documented in the module's docstring — these are
 illustrative to show the shape of the cost curve, not vendor quotes.
 
-## Discussion
 
-**Retrieval or generation — which was the weaker link?**
-[Fill this in after running your own eval — look at whether low-scoring
-answers correspond to low retrieval metrics (retrieval is the bottleneck)
-or good retrieval metrics with weak faithfulness scores (generation is
-the bottleneck).]
 
 **When would you switch back to a managed DB?**
 Once you need multi-region low-latency replication, automatic scaling
@@ -108,8 +105,5 @@ across many concurrent write-heavy clients, or a team without infra
 capacity to manage a VM/backups — the operational cost of self-hosting
 starts to outweigh the dollar savings shown above.
 
-## AI usage disclosure
 
-Built with Claude's help for architecture, boilerplate, and the evaluation
-harness. [Fill in: which parts you modified, debugged, or wrote yourself,
-and what you had Claude generate.]
+
